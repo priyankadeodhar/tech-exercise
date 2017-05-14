@@ -1,0 +1,367 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil Courier New;}{\f1\fnil\fcharset0 Courier New;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red42\green0\blue255;\red100\green100\blue100;\red240\green216\blue168;\red63\green127\blue95;\red212\green212\blue212;}
+{\*\generator Riched20 10.0.14393}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs20\lang9\par
+\cf2\ul\fs36 InstructionRecord\f1\lang2057 .java\cf1\ulnone\f0\fs20\lang9\par
+\par
+package\cf2\b0  com.data;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  InstructionRecord \cf1\b implements\cf2\b0  Comparable<InstructionRecord>\{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 entity\cf2 =\cf1\b null\cf2\b0 ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  \cf1\b char\cf2\b0  \cf3 buyOrSell\cf2 =0;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  \cf1\b float\cf2\b0  \cf3 agreedFx\cf2 =0.0f;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 currency\cf2 =\cf1\b null\cf2\b0 ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 instructionDate\cf2 =\cf1\b null\cf2\b0 ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 settlementDate\cf2 =\cf1\b null\cf2\b0 ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3 units\cf2 =0;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  \cf1\b float\cf2\b0  \cf3 pricePerUnit\cf2  =0.0f;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3 rank\cf2  =0;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  \cf1\b double\cf2\b0  \cf3 usdAmountOFTrade\cf2  =0.0d;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getEntity() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 entity\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setEntity(String entity) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 entity\cf2  = entity;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b char\cf2\b0  getBuyOrSell() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 buyOrSell\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setBuyOrSell(\cf1\b char\cf2\b0  buyOrSell) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 buyOrSell\cf2  = buyOrSell;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b float\cf2\b0  getAgreedFx() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 agreedFx\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setAgreedFx(\cf1\b float\cf2\b0  agreeFx) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 agreedFx\cf2  = agreeFx;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getCurrency() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 currency\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setCurrency(String currency) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 currency\cf2  = currency;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getInstructionDate() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 instructionDate\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setInstructionDate(String instructionDate) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 instructionDate\cf2  = instructionDate;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getSettlementDate() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 settlementDate\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setSettlementDate(String settlementDate) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 settlementDate\cf2  = settlementDate;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getUnits() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 units\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setUnits(\cf1\b int\cf2\b0  units) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 units\cf2  = units;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b float\cf2\b0  getPricePerUnit() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 pricePerUnit\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setPricePerUnit(\cf1\b float\cf2\b0  pricePerUnit) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 pricePerUnit\cf2  = pricePerUnit;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b double\cf2\b0  getUsdAmountOFTrade() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 usdAmountOFTrade\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setUsdAmountOFTrade(\cf1\b double\cf2\b0  usdAmountOFTrade) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 usdAmountOFTrade\cf2  = usdAmountOFTrade;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getRank() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 rank\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setRank(\cf1\b int\cf2\b0  rank) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 rank\cf2  = rank;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  String toString()\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  (\cf3 entity\cf2 +\cf4 " | "\cf2 +\cf3 buyOrSell\cf2 +\cf4 " | "\cf2 +\cf3 agreedFx\cf2 +\cf4 " | "\cf2 +\cf3 currency\cf2 +\cf4 " | "\cf2 +\cf3 instructionDate\cf2 +\cf4 " | "\cf2 +\cf3 settlementDate\cf2 + \cf4 " | "\cf2 +\cf3 units\cf2 +\cf4 " | "\cf2 +\cf3 pricePerUnit\cf2 +\cf4 " | "\cf2 +\cf3 usdAmountOFTrade\cf2 +\cf4 " | "\cf2 +\cf3 rank\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf5 @Override\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  compareTo(InstructionRecord ir) \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf1\b new\cf2\b0  Double(ir.getUsdAmountOFTrade()).compareTo(\cf3 usdAmountOFTrade\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\par
+\par
+\par
+\ul\b\f1\fs36\lang2057 CreateData.java\par
+\cf1\ulnone\f0\fs20 package\cf2\b0  com.data;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.io.FileNotFoundException;\cf0\par
+\cf1\b import\cf2\b0  java.io.FileReader;\cf0\par
+\cf1\b import\cf2\b0  java.text.ParseException;\cf0\par
+\cf1\b import\cf2\b0  java.util.ArrayList;\cf0\par
+\cf1\b import\cf2\b0  java.util.NoSuchElementException;\cf0\par
+\cf1\b import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  CreateData \{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  ArrayList<InstructionRecord> createInstructionRecordListFromFile()\{\cf0\par
+\cf2\tab\tab String line=\cf1\b null\cf2\b0 ;\cf0\par
+\cf2\tab\tab ArrayList<InstructionRecord> inputDataList = \cf1\b new\cf2\b0  ArrayList<InstructionRecord>();\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b try\cf0\b0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab String currentDir=System.\i getProperty\i0 (\cf4 "user.dir"\cf2 );\cf0\par
+\cf2\tab\tab\tab FileReader fr= \cf1\b new\cf2\b0  FileReader(currentDir+\cf4 "\\\\inputData.txt"\cf2 );\cf0\par
+\cf2\tab\tab\tab Scanner s= \cf1\b new\cf2\b0  Scanner(fr);\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b while\cf2\b0 (s.hasNext() )\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab  line=s.next();\cf0\par
+\cf2\tab\tab\tab\tab String[] lineStr= line.split(\cf4 ","\cf2 );\cf0\par
+\cf2\tab\tab\tab  \cf1\b if\cf2\b0 (lineStr!=\cf1\b null\cf2\b0  && lineStr.\cf3 length\cf2 !=0)\cf0\par
+\cf2\tab\tab\tab  \{\cf0\par
+\cf2\tab\tab\tab\tab inputDataList.add(\i createInstructionRecord\i0 (lineStr));\cf0\par
+\cf2\tab\tab\tab  \}\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab s.close();\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b catch\cf2\b0 (FileNotFoundException f)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab f.printStackTrace();\cf0\par
+\cf2\tab\tab\} \cf0\par
+\cf2\tab\tab\cf1\b catch\cf2\b0 (NoSuchElementException e)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab e.printStackTrace();\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b catch\cf2\b0 (ParseException pe)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab pe.printStackTrace();\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  inputDataList;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  InstructionRecord createInstructionRecord(String[] lineStr ) \cf1\b throws\cf2\b0  ParseException\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab InstructionRecord record = \cf1\b new\cf2\b0  InstructionRecord();\cf0\par
+\cf2\tab\tab record.setEntity(lineStr[0]);\cf0\par
+\cf2\tab\tab record.setBuyOrSell(lineStr[1].charAt(0));\cf0\par
+\cf2\tab\tab record.setAgreedFx(Float.\i parseFloat\i0 (lineStr[2]));\cf0\par
+\cf2\tab\tab record.setCurrency(lineStr[3]);\cf0\par
+\cf2\tab\tab record.setInstructionDate(lineStr[4]);\cf0\par
+\cf2\tab\tab record.setSettlementDate(lineStr[5]);\cf0\par
+\cf2\tab\tab record.setUnits(Integer.\i parseInt\i0 (lineStr[6]));\cf0\par
+\cf2\tab\tab record.setPricePerUnit(Float.\i parseFloat\i0 (lineStr[7]));\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab record.setUsdAmountOFTrade(record.getAgreedFx()*record.getPricePerUnit()*record.getUnits());\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  record;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  displayInstructionRecordList(ArrayList<InstructionRecord> inputDataList)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (InstructionRecord ir:inputDataList)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab System.\cf3\i out\cf2\i0 .println(ir);\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf0\par
+\cf2\}\par
+\cf0\ul\b\fs36\par
+\f1 Constants.java\par
+\cf1\ulnone\f0\fs20 package\cf2\b0  com.data;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Constants \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b final\cf2\b0  String \cf3\i AED\cf2\i0  =\cf4 "AED"\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b final\cf2\b0  String \cf3\i SAR\cf2\i0  =\cf4 "SAR"\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b final\cf2\b0  \cf1\b char\cf2\b0  \cf3\highlight6\i BUY\cf2\highlight0\i0  =\cf4 'B'\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b final\cf2\b0  \cf1\b char\cf2\b0  \cf3\i SELL\cf2\i0  =\cf4 'S'\cf2 ;\cf0\par
+\cf2\}\par
+\par
+\cf0\ul\b\f1\fs36 CreateOutput.java\par
+\cf1\ulnone\f0\fs20 package\cf2\b0  com.data;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.text.ParseException;\cf0\par
+\cf1\b import\cf2\b0  java.text.SimpleDateFormat;\cf0\par
+\cf1\b import\cf2\b0  java.util.ArrayList;\cf0\par
+\cf1\b import\cf2\b0  java.util.Calendar;\cf0\par
+\cf1\b import\cf2\b0  java.util.Collections;\cf0\par
+\cf1\b import\cf2\b0  java.util.Date;\cf0\par
+\cf1\b import\cf2\b0  java.util.Locale;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  CreateOutput \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] args) \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\tab ArrayList<InstructionRecord> instructionRecordList =CreateData.\i createInstructionRecordListFromFile\i0 ();\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (instructionRecordList!=\cf1\b null\cf2\b0  && !instructionRecordList.isEmpty())\cf0\par
+\cf2\tab\tab\i updateSettlementRecord\i0 (instructionRecordList);\cf0\par
+\cf2\tab\tab\i totalUSDIncomingOutgoingForToday\i0 (instructionRecordList);\cf0\par
+\cf2\tab\tab\i sortArrayListBasedOnUSD\i0 (instructionRecordList);\cf0\par
+\cf2\tab\tab\i displayOutput\i0 (instructionRecordList);\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  updateSettlementRecord(ArrayList<InstructionRecord> instructionRecordList)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (InstructionRecord ir:instructionRecordList)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab ir.setSettlementDate(\i getNewSettlementDate\i0 (ir.getCurrency(),ir.getSettlementDate()));\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  String getNewSettlementDate(String currencyType,String settlementDate)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab Date date=\cf1\b null\cf2\b0 ;\cf0\par
+\cf2\tab\tab SimpleDateFormat format = \cf1\b new\cf2\b0  SimpleDateFormat(\cf4 "dd-MMM-yyyy"\cf2 ,Locale.\cf3\i UK\cf2\i0 );\cf0\par
+\cf2\tab\tab\cf1\b try\cf2\b0  \{\cf0\par
+\cf2\tab\tab\tab date = format.parse(settlementDate);\cf0\par
+\cf2\tab\tab\} \cf1\b catch\cf2\b0  (ParseException e) \{\cf0\par
+\cf2\tab\tab\tab e.printStackTrace();\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab  Calendar c=Calendar.\i getInstance\i0 ();\cf0\par
+\cf2\tab\tab  c.setTime(date);\cf0\par
+\cf2\tab\tab  \cf1\b int\cf2\b0  dayOfWeek=c.get(Calendar.\cf3\i DAY_OF_WEEK\cf2\i0 );\cf0\par
+\cf2\tab\tab  \cf1\b if\cf2\b0 (currencyType.equals(Constants.\cf3\i SAR\cf2\i0 ) || currencyType.equals(Constants.\cf3\i AED\cf2\i0 )  )\cf0\par
+\cf2\tab\tab  \{\cf0\par
+\cf2\tab\tab\tab  \cf1\b switch\cf2\b0 (dayOfWeek)\cf0\par
+\cf2\tab\tab\tab  \{\cf0\par
+\cf2\tab\tab\tab  \cf1\b case\cf2\b0  Calendar.\cf3\i FRIDAY\cf2\i0  :  c.add(Calendar.\cf3\i DATE\cf2\i0  ,2);\cf0\par
+\cf2\tab\tab\tab  \cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab  \cf1\b case\cf2\b0  Calendar.\cf3\i SATURDAY\cf2\i0  :c.add(Calendar.\cf3\i DATE\cf2\i0  ,1);\cf0\par
+\cf2\tab\tab\tab  \cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab  \}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab  \cf1\b else\cf2\b0\{\cf0\par
+\cf2\tab\tab\tab  \cf1\b switch\cf2\b0 (dayOfWeek)\cf0\par
+\cf2\tab\tab\tab  \{\cf0\par
+\cf2\tab\tab\tab  \cf1\b case\cf2\b0  Calendar.\cf3\i SATURDAY\cf2\i0 :  c.add(Calendar.\cf3\i DATE\cf2\i0  ,2);\cf0\par
+\cf2\tab\tab\tab  \cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab  \cf1\b case\cf2\b0  Calendar.\cf3\i SUNDAY\cf2\i0  :c.add(Calendar.\cf3\i DATE\cf2\i0  ,1);\cf0\par
+\cf2\tab\tab\tab  \cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab  \}\cf0\par
+\cf2\tab\tab  \}\cf0\par
+\cf2\tab\tab  format.format(c.getTime());\cf0\par
+\cf2\tab\tab  settlementDate = format.format(c.getTime());\cf0\par
+\cf2\tab\tab  \cf1\b return\cf2\b0  settlementDate;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf7 //Calculate total amount USD settled incoming everyday\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  totalUSDIncomingOutgoingForToday(ArrayList<InstructionRecord> instructionRecordList)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab SimpleDateFormat format = \cf1\b new\cf2\b0  SimpleDateFormat(\cf4 "dd-MMM-yyyy"\cf2 ,Locale.\cf3\i UK\cf2\i0 );\cf0\par
+\cf2\tab\tab Calendar currentDateCal= Calendar.\i getInstance\i0 ();\cf0\par
+\cf2\tab\tab String currentDate = format.format(currentDateCal.getTime());\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\tab\cf1\b double\cf2\b0  totalUSDIncoming = 0.0d;\cf0\par
+\cf2\tab\tab\cf1\b double\cf2\b0  totalUSDOutgoing = 0.0d;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (InstructionRecord ir:instructionRecordList)\cf0\par
+\cf2\tab\tab\{\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0 (ir.getSettlementDate().equals(currentDate))\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf2\b0 (ir.getBuyOrSell() == Constants.\cf3\i BUY\cf2\i0 )\cf0\par
+\cf2\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab totalUSDIncoming+=ir.getUsdAmountOFTrade();\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf2\b0 (ir.getBuyOrSell() == Constants.\cf3\i SELL\cf2\i0 )\cf0\par
+\cf2\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab totalUSDOutgoing+=ir.getUsdAmountOFTrade();\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab System.\cf3\i out\cf2\i0 .\highlight8 println\highlight0 (\cf4 "Amount USD settled incoming today == "\cf2 +totalUSDIncoming);\cf0\par
+\cf2\tab\tab System.\cf3\i out\cf2\i0 .\highlight8 println\highlight0 (\cf4 "Amount USD settled Outgoing today == "\cf2 +totalUSDOutgoing);\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  sortArrayListBasedOnUSD(ArrayList<InstructionRecord> instructionRecordList)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab ArrayList<InstructionRecord> buyList = \cf1\b new\cf2\b0  ArrayList<InstructionRecord> ();\cf0\par
+\cf2\tab\tab ArrayList<InstructionRecord> sellList = \cf1\b new\cf2\b0  ArrayList<InstructionRecord> ();\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (InstructionRecord ir:instructionRecordList)\cf0\par
+\cf2\tab\tab\{\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0 (ir.getBuyOrSell() == Constants.\cf3\i BUY\cf2\i0 )\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab buyList.add(ir);\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0 (ir.getBuyOrSell() == Constants.\cf3\i SELL\cf2\i0 )\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab sellList.add(ir);\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab Collections.\i sort\i0 (buyList);\cf0\par
+\cf2\tab\tab Collections.\i sort\i0 (sellList);\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b int\cf2\b0  rank=0;\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b for\cf2\b0 (InstructionRecord ir1:buyList)\cf0\par
+\cf2\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab ir1.setRank(++rank);\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab rank=0;\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b for\cf2\b0 (InstructionRecord ir1:sellList)\cf0\par
+\cf2\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab ir1.setRank(++rank);\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab ArrayList<InstructionRecord> finalInstructionRecordList = \cf1\b new\cf2\b0  ArrayList<InstructionRecord>();\cf0\par
+\cf2\tab\tab\tab\tab finalInstructionRecordList.addAll(buyList);\cf0\par
+\cf2\tab\tab\tab\tab finalInstructionRecordList.addAll(sellList);\cf0\par
+\cf2\tab\tab\tab\tab instructionRecordList.clear();\cf0\par
+\cf2\tab\tab\tab\tab instructionRecordList.addAll(finalInstructionRecordList);\cf0\par
+\cf2\tab\tab\tab\tab finalInstructionRecordList=\cf1\b null\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  displayOutput(ArrayList<InstructionRecord> inputDataList)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\tab System.\cf3\i out\cf2\i0 .\highlight8 println\highlight0 (\cf4 "Identity  |  Buy/Sell  |  USD Amount  |  Rank"\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (InstructionRecord ir:inputDataList)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab System.\cf3\i out\cf2\i0 .\highlight8 println\highlight0 (ir.getEntity()+ \cf4 "\tab |\tab "\cf2 +ir.getBuyOrSell()+\cf4 "\tab |\tab "\cf2 + ir.getUsdAmountOFTrade()+\cf4 "\tab |\tab "\cf2 +ir.getRank());\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\par
+\ul\b\fs36\par
+\f1 inputData.txt\par
+\ulnone\b0\fs20\par
+\cf2\ul\f0 foo\cf0\ulnone ,B,0.50,SAR,13-May-2017,14-May-2017,200,100.25\par
+bar,S,0.22,AED,12-May-2017,13-May-2017,450,10.5\par
+bar,S,0.22,AED,12-May-2017,13-May-2017,450,150.5\par
+\cf2\ul foo\cf0\ulnone ,S,0.90,SAR,13-May-2017,14-May-2017,100,100.25\par
+\par
+\ul\b\f1\fs36 Console Output\par
+\par
+\cf2\ulnone\b0\f0\fs20 Amount USD settled incoming today == 10025.0\cf0\par
+\cf2 Amount USD settled Outgoing today == 24961.5\cf0\par
+\cf2 Identity  |  Buy/Sell  |  USD Amount  |  Rank\cf0\par
+\cf2 foo\tab |\tab B\tab |\tab 10025.0\tab |\tab 1\cf0\par
+\cf2 bar\tab |\tab S\tab |\tab 14899.5\tab |\tab 1\cf0\par
+\cf2 foo\tab |\tab S\tab |\tab 9022.5\tab |\tab 2\cf0\par
+\cf2 bar\tab |\tab S\tab |\tab 1039.5\tab |\tab 3\cf0\par
+\ul\b\fs36\par
+\cf2\ulnone\b0\fs20\lang9\par
+\par
+\cf0\par
+\f2\fs22\par
+}
+ 
