@@ -1,2 +1,0 @@
-# tech-exercise
-tech excercise
