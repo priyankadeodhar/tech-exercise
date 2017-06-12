@@ -1,0 +1,238 @@
+===========================
+<---------------------Processed Messages after 10th Message--------> 
+===========================
+Product Type:apple
+Product Details ----->Total Sales : 23
+Total Price : £ 1.72
+===========================
+Product Type:banana
+Product Details ----->Total Sales : 69
+Total Price : £ 18.45
+===========================
+Product Type:pears
+Product Details ----->Total Sales : 51
+Total Price : £ 37.799995
+===========================
+Product Type:grapes
+Product Details ----->Total Sales : 1
+Total Price : £ 1.0
+===========================
+<---------------------Processed Messages after 20th Message--------> 
+===========================
+Product Type:apple
+Product Details ----->Total Sales : 46
+Total Price : £ 12.920001
+===========================
+Product Type:banana
+Product Details ----->Total Sales : 138
+Total Price : £ 29.0
+===========================
+Product Type:pears
+Product Details ----->Total Sales : 54
+Total Price : £ 38.399994
+===========================
+Product Type:grapes
+Product Details ----->Total Sales : 2
+Total Price : £ 2.0
+===========================
+Product Type:strawberries
+Product Details ----->Total Sales : 66
+Total Price : £ 429.0
+===========================
+<---------------------Processed Messages after 30th Message--------> 
+===========================
+Product Type:apple
+Product Details ----->Total Sales : 48
+Total Price : £ 4.484
+===========================
+Product Type:banana
+Product Details ----->Total Sales : 206
+Total Price : £ 32.55
+===========================
+Product Type:pears
+Product Details ----->Total Sales : 150
+Total Price : £ 111.29999
+===========================
+Product Type:grapes
+Product Details ----->Total Sales : 4
+Total Price : £ 4.0
+===========================
+Product Type:strawberries
+Product Details ----->Total Sales : 99
+Total Price : £ 495.0
+===========================
+<---------------------Processed Messages after 40th Message--------> 
+===========================
+Product Type:apple
+Product Details ----->Total Sales : 53
+Total Price : £ 15.384001
+===========================
+Product Type:banana
+Product Details ----->Total Sales : 342
+Total Price : £ 19.25
+===========================
+Product Type:pears
+Product Details ----->Total Sales : 198
+Total Price : £ 147.0
+===========================
+Product Type:grapes
+Product Details ----->Total Sales : 4
+Total Price : £ 4.0
+===========================
+Product Type:strawberries
+Product Details ----->Total Sales : 132
+Total Price : £ 858.0
+===========================
+<---------------------Processed Messages after 50th Message--------> 
+===========================
+Product Type:apple
+Product Details ----->Total Sales : 55
+Total Price : £ 14.376801
+===========================
+Product Type:banana
+Product Details ----->Total Sales : 477
+Total Price : £ 25.849995
+===========================
+Product Type:pears
+Product Details ----->Total Sales : 294
+Total Price : £ 219.90002
+===========================
+Product Type:grapes
+Product Details ----->Total Sales : 5
+Total Price : £ 5.0
+===========================
+Product Type:strawberries
+Product Details ----->Total Sales : 165
+Total Price : £ 924.0
+----------------------------
+Data Report after 50th Message
+----------------------------
+Operation :Operation is : ADD  £0.2 apple
+Sale Details -----> 
+1 apple at £ 0.1
+20 apple at £ 0.2
+Operation :Operation is : SUBTRACT  £0.1 banana
+Sale Details -----> 
+1 banana at £ 0.2
+67 banana at £ 0.35
+Operation :Operation is : MULTIPLY  £0.2 apple
+Sale Details -----> 
+1 apple at £ 0.1
+20 apple at £ 0.2
+2 apple at £ 0.15
+Operation :Operation is : ADD  £0.2 apple
+Sale Details -----> 
+1 apple at £ 0.1
+20 apple at £ 0.2
+2 apple at £ 0.15
+1 apple at £ 0.1
+20 apple at £ 0.1
+Operation :Operation is : SUBTRACT  £0.1 banana
+Sale Details -----> 
+1 banana at £ 0.2
+67 banana at £ 0.35
+1 banana at £ 1.6
+1 banana at £ 0.2
+67 banana at £ 0.35
+Operation :Operation is : ADD  £0.2 apple
+Sale Details -----> 
+1 apple at £ 0.1
+20 apple at £ 0.2
+2 apple at £ 0.15
+1 apple at £ 0.1
+20 apple at £ 0.1
+2 apple at £ 0.15
+Operation :Operation is : SUBTRACT  £0.1 banana
+Sale Details -----> 
+1 banana at £ 0.2
+67 banana at £ 0.35
+1 banana at £ 1.6
+1 banana at £ 0.2
+67 banana at £ 0.35
+1 banana at £ 0.6
+67 banana at £ 0.35
+Operation :Operation is : MULTIPLY  £0.2 apple
+Sale Details -----> 
+1 apple at £ 0.1
+20 apple at £ 0.2
+2 apple at £ 0.15
+1 apple at £ 0.1
+20 apple at £ 0.1
+2 apple at £ 0.15
+2 apple at £ 0.15
+Operation :Operation is : SUBTRACT  £0.1 banana
+Sale Details -----> 
+1 banana at £ 0.2
+67 banana at £ 0.35
+1 banana at £ 1.6
+1 banana at £ 0.2
+67 banana at £ 0.35
+1 banana at £ 0.6
+67 banana at £ 0.35
+1 banana at £ 0.6
+67 banana at £ 0.35
+Operation :Operation is : ADD  £0.2 apple
+Sale Details -----> 
+1 apple at £ 0.1
+20 apple at £ 0.2
+2 apple at £ 0.15
+1 apple at £ 0.1
+20 apple at £ 0.1
+2 apple at £ 0.15
+2 apple at £ 0.15
+1 apple at £ 0.1
+2 apple at £ 0.15
+Operation :Operation is : SUBTRACT  £0.1 banana
+Sale Details -----> 
+1 banana at £ 0.2
+67 banana at £ 0.35
+1 banana at £ 1.6
+1 banana at £ 0.2
+67 banana at £ 0.35
+1 banana at £ 0.6
+67 banana at £ 0.35
+1 banana at £ 0.6
+67 banana at £ 0.35
+1 banana at £ 0.6
+67 banana at £ 0.35
+Operation :Operation is : MULTIPLY  £0.2 apple
+Sale Details -----> 
+1 apple at £ 0.1
+20 apple at £ 0.2
+2 apple at £ 0.15
+1 apple at £ 0.1
+20 apple at £ 0.1
+2 apple at £ 0.15
+2 apple at £ 0.15
+1 apple at £ 0.1
+2 apple at £ 0.15
+2 apple at £ 0.15
+Operation :Operation is : SUBTRACT  £0.1 banana
+Sale Details -----> 
+1 banana at £ 0.2
+67 banana at £ 0.35
+1 banana at £ 1.6
+1 banana at £ 0.2
+67 banana at £ 0.35
+1 banana at £ 0.6
+67 banana at £ 0.35
+1 banana at £ 0.6
+67 banana at £ 0.35
+1 banana at £ 0.6
+67 banana at £ 0.35
+1 banana at £ 0.6
+67 banana at £ 0.35
+Operation :Operation is : ADD  £0.2 apple
+Sale Details -----> 
+1 apple at £ 0.1
+20 apple at £ 0.2
+2 apple at £ 0.15
+1 apple at £ 0.1
+20 apple at £ 0.1
+2 apple at £ 0.15
+2 apple at £ 0.15
+1 apple at £ 0.1
+2 apple at £ 0.15
+2 apple at £ 0.15
+2 apple at £ 0.15
+Now the application is pausing
